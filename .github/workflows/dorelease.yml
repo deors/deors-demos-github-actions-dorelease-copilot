@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Extract Issue Form Parameters
         id: parse_form
         uses: onmax/issue-form-parser@v1.6
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Cancel Release
         run:
           echo "Release canceled for issue ${{ github.event.issue.number }} by
